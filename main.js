@@ -101,4 +101,113 @@ duração (opcional): Tempo em milissegundos ou string ("slow", "fast") que espe
 complete (opcional): Função de callback a ser executada após a animação ser concluída.
 
 - Vale ressaltar que todas as funções vistas aceitam, como parâmetro, uma duração em milissegundos para executar o efeito.
+
+
+
+Seletores
+$(): A função principal do jQuery para selecionar elementos do DOM.
+Exemplo: $('p') - Seleciona todos os parágrafos.
+
+
+
+Manipulação de Elementos
+.html(): Obtém ou define o conteúdo HTML de um elemento.
+Exemplo: $('#elemento').html('<p>Novo conteúdo</p>').
+
+.text(): Obtém ou define o conteúdo de texto de um elemento.
+Exemplo: $('#elemento').text('Novo texto').
+
+.val(): Obtém ou define o valor de um campo de formulário.
+Exemplo: $('#input').val('Novo valor').
+
+.attr(): Obtém ou define atributos de um elemento.
+Exemplo: $('#link').attr('href', 'https://example.com').
+
+.css(): Obtém ou define propriedades CSS de um elemento.
+Exemplo: $('#elemento').css('color', 'red').
+
+
+
+Manipulação de Eventos
+.on(): Anexa manipuladores de eventos a elementos.
+Exemplo: $('#botao').on('click', function() { alert('Clicado!'); }).
+
+.click(): Atalho para anexar um manipulador de evento de clique.
+Exemplo: $('#botao').click(function() { alert('Clicado!'); }).
+
+
+
+Efeitos e Animações
+.hide(): Oculta um elemento.
+Exemplo: $('#elemento').hide().
+
+.show(): Mostra um elemento oculto.
+Exemplo: $('#elemento').show().
+
+.fadeIn(): Gradualmente mostra um elemento, aumentando a opacidade.
+Exemplo: $('#elemento').fadeIn().
+
+.fadeOut(): Gradualmente oculta um elemento, diminuindo a opacidade.
+Exemplo: $('#elemento').fadeOut().
+
+.slideUp(): Recolhe um elemento até que esteja oculto.
+Exemplo: $('#elemento').slideUp().
+
+.slideDown(): Expande um elemento até que esteja visível.
+Exemplo: $('#elemento').slideDown().
+
+.toggle(): Alterna entre mostrar e esconder um elemento.
+Exemplo: $('#elemento').toggle().
+
+
+
+Manipulação do DOM
+.append(): Insere conteúdo no final dos elementos selecionados.
+Exemplo: $('#lista').append('<li>Novo item</li>').
+
+.prepend(): Insere conteúdo no início dos elementos selecionados.
+Exemplo: $('#lista').prepend('<li>Novo item</li>').
+
+.after(): Insere conteúdo após os elementos selecionados.
+Exemplo: $('#elemento').after('<p>Depois do elemento</p>').
+
+.before(): Insere conteúdo antes dos elementos selecionados.
+Exemplo: $('#elemento').before('<p>Antes do elemento</p>').
+
+.remove(): Remove os elementos selecionados do DOM.
+Exemplo: $('#elemento').remove().
+
+.empty(): Remove todos os filhos dos elementos selecionados.
+Exemplo: $('#elemento').empty().
+
+
+
+Manipulação de Classes
+.addClass(): Adiciona uma ou mais classes aos elementos selecionados.
+Exemplo: $('#elemento').addClass('nova-classe').
+
+.removeClass(): Remove uma ou mais classes dos elementos selecionados.
+Exemplo: $('#elemento').removeClass('classe-existente').
+
+.toggleClass(): Alterna a presença de uma ou mais classes nos elementos selecionados.
+Exemplo: $('#elemento').toggleClass('classe').
+
+
+OUTRAS DUVIDAS
+Seletor de atributo: Use colchetes ([]) para selecionar elementos com um atributo específico. Por exemplo, $('[type="text"]') selecionará todos os elementos com o atributo type igual a "text". 
+
+
+Seletor de descendente: Você pode usar o espaço para selecionar elementos que são descendentes de outro elemento. Por exemplo, $('div p') selecionará todos os parágrafos que são descendentes de um elemento div. 
+
+
+Seletor de elementos visíveis: Use o pseudo-seletor :visible para selecionar elementos que estão visíveis na página. Por exemplo, $('.elemento:visible') selecionará todos os elementos com a classe "elemento" que estão visíveis.
+
+
+Seletor de elementos ocultos: Use o pseudo-seletor :hidden para selecionar elementos que estão ocultos na página. Por exemplo, $('.elemento:hidden') selecionará todos os elementos com a classe "elemento" que estão ocultos.
+
+
+Combine seletores: Você pode combinar diferentes seletores para refinar sua seleção. Por exemplo, $('div .classe') selecionará todos os elementos com a classe "classe" que são descendentes de um elemento div.
+
+
+Cache de seletores: Se você planeja usar o mesmo seletor várias vezes, armazene-o em uma variável para evitar pesquisas repetidas no DOM. Isso pode melhorar o desempenho do seu código.
 */
